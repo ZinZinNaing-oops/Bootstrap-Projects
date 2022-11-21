@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Day1_Assignment1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <title>Modal And Table Test</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+            <div class="container">
+                <a class="navbar-brand"><i class="fa-brands fa-bootstrap"></i>Bootstrap</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mymenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">Service 1</a></li>
+                                <li><a class="dropdown-item">Service 2</a></li>
+                                <li><a class="dropdown-item">Service 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-md-block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Registration</a></li>
+                        <li class="nav-item"><a href="#mymodal" class="nav-link" data-bs-toggle="modal">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-primary table-striped">
+                        <tr class="table-dark">
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mg Mg</td>
+                            <td>Yangon</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mg Mg</td>
+                            <td>Mandalay</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table class="table table-primary table-striped">
+                        <tr class="table-dark align-middle" >
+                            <th rowspan="2">No.</th>
+                            <th rowspan="2">Name of Module</th>
+                            <th rowspan="2">Credit Points</th>
+                            <th colspan="2" class="text-center">Hours per week</th>
+
+                        </tr>
+                        <tr>
+                            <th>Lecture Hour</th>
+                            <th>Total  Hour</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Myanmar</td>
+                            <td>Research Area</td>
+                            <td>Myanmar</td>
+                            <td>Research Area</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mg Mg</td>
+                            <td>Research Area</td>
+                            <td>English</td>
+                            <td>Research Area</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Sign In</h2>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="p-3 justify-content-center" >
+                            <div>
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div>
+                                <label class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control" placeholder="Your Password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <div class="text-center" >
+                            <button class="btn btn-sm btn-dark">Login</button>
+                            <button class="btn btn-outline-dark btn-sm" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

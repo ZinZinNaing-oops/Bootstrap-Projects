@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Day1_Assignment1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <div class="container d-flex flex-column justify-content-center align-items-center mt-5">
+            <h2>Apply as a Employee</h2>
+            <form style="width: 70%;" class="mt-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <input type="text" placeholder="First Name" class="form-control mt-3">
+                        <input type="text" placeholder="Last Name" class="form-control mt-3">
+                        <input type="password" placeholder="Password" class="form-control mt-3">
+                        <input type="password" placeholder="Confirm Password" class="form-control mt-3">
+                        <div class="d-flex">
+                            <div>
+                                <label class="form-check-label">Male</label>
+                                <input type="radio" class="form-check-input" name="gender">
+                            </div>
+                            <div>
+                                <label class="form-check-label">Female</label>
+                                <input type="radio" class="form-check-input" name="gender">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <input type="email" placeholder="Your Email" class="form-control mt-3">
+                        <input type="number" placeholder="Your Phone" class="form-control mt-3">
+                        <select class="form-select mt-3">
+                            <option value="0">Please Select Your Security Question</option>
+                            <option value="1">What is your birthday?</option>
+                            <option value="2">What is your old phone number?</option>
+                            <option value="3">What is yout pet name?</option>
+                        </select>
+                        <input type="number" placeholder="Enter Your Answer" class="form-control mt-3">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end align-item-end">
+                    <a class="btn btn-dark">Register</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
